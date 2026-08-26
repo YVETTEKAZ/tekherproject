@@ -51,3 +51,51 @@ reports/
 ## Assignment Branch
 
 This work is completed on the `assignment2-data-wrangling` branch.
+
+## Assignment 3 — Machine Learning Regression
+
+For Assignment 3, the cleaned Titanic dataset from Assignment 2 was used to
+build regression models for predicting passenger fare.
+
+### Question
+
+Can passenger fare be predicted using passenger class, age, number of
+siblings/spouses, and number of parents/children aboard?
+
+### Features
+
+- `pclass`
+- `age`
+- `sibsp`
+- `parch`
+
+### Target
+
+- `fare`
+
+### Models
+
+- Linear Regression
+- Random Forest Regressor
+
+### Train/Test Split
+
+The dataset was divided into:
+- 80% training data
+- 20% testing data
+
+A `random_state` of 42 was used for reproducibility.
+
+### Results
+
+| Model | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| Linear Regression | 21.77 | 40.93 | 0.369 |
+| Random Forest | 16.33 | 43.98 | 0.272 |
+
+Linear Regression performed better overall based on RMSE and R², while Random
+Forest achieved a lower MAE.
+
+### Dataset
+
+The Titanic dataset was obtained from the source documented in Assignment 2.
